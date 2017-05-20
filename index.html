@@ -34,11 +34,18 @@ $("body").addClass("animated fadeIn");
 	$('#two').removeClass('normal');
     $('#two').addClass('invert'); 
   }
-if ($(document).scrollTop() > 2000) {	
+if ($(document).scrollTop() > 2000 && $(document).scrollTop() < 2400 ) {	
   $('#two').addClass('normal');
     $('#two').removeClass('invert'); 
+	$('.fa-heart').addClass('inv');
   } 
-if ($(document).scrollTop() > 2350) {
+  
+if ($(document).scrollTop() > 2400) {	
+  $('#two').addClass('invert');
+    $('#two').removeClass('normal'); 
+	$('.fa-heart').removeClass('inv');
+  } 
+if ($(document).scrollTop() > 2850) {
 setTimeout(function() {	
   $('#foot').addClass('animated fadeIn');
     $('#foot').removeClass('inv'); 
@@ -139,6 +146,12 @@ font-family: 'Josefin Sans', sans-serif;
 color:#E0E0E0;
 font-family: 'Homemade Apple', cursive;font-size:50px;color:white;
 text-align:center;
+}
+.fa-heart{
+color:red;
+}
+#abc > .fa-heart{
+font-size:30px;
 }
 </style>
 
@@ -256,7 +269,23 @@ chain of pharmacies		</div>
 				</br>Organization&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>
 			</div>
 		</div>
-		</br></br></br></br></br></br></br></br></br></br>
+		</br></br></br></br></br></br></br></br></br>
+		<div class="row">
+		<div class="col-md-1 offset-md-1" >
+		<i class="fa fa-heart inv"></i>
+		</div>
+		</div></br></br>
+		<div class="row" style="color:#E0E0E0;font-family: 'Josefin Sans', sans-serif;">
+			<div id="abc" class="col-md-5 offset-md-1" style="font-size:28px !important;">
+				Photography&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-heart inv"></i>&nbsp<i class="fa fa-heart inv"></i>&nbsp<i class="fa fa-heart inv"></i>&nbsp<i class="fa fa-heart inv"></i>&nbsp<i class="fa fa-heart inv"></i>
+				</br>Wes Anderson movies&nbsp&nbsp&nbsp<i class="fa fa-heart inv"></i>&nbsp<i class="fa fa-heart inv"></i>&nbsp<i class="fa fa-heart inv"></i>&nbsp<i class="fa fa-heart inv"></i>&nbsp<i class="fa fa-heart inv"></i>
+				</br>Medievil Fantasy&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-heart inv"></i>&nbsp<i class="fa fa-heart inv"></i>&nbsp<i class="fa fa-heart inv"></i>&nbsp<i class="fa fa-heart inv"></i>&nbsp<i class="fa fa-heart inv"></i>
+				</br>Gaming&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-heart inv"></i>&nbsp<i class="fa fa-heart inv"></i>&nbsp<i class="fa fa-heart inv"></i>&nbsp<i class="fa fa-heart inv"></i>&nbsp<i class="fa fa-heart inv"></i>
+				</br>Classical Guitar&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-heart inv"></i>&nbsp<i class="fa fa-heart inv"></i>&nbsp<i class="fa fa-heart inv"></i>&nbsp<i class="fa fa-heart inv"></i>&nbsp<i class="fa fa-heart inv"></i>
+				</br>EDM&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-heart inv"></i>&nbsp<i class="fa fa-heart inv"></i>
+			</div>
+		</div>
+		</br></br></br></br></br></br></br></br></br></br>		
 	</div>
 	<div class="footer"></br>
 	<div id="foot"class="inv">
