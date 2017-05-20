@@ -1,0 +1,270 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="animate.css">
+<link rel="stylesheet" href="font-awesome\css\font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+<script>
+ $(document).ready(function() {
+
+$("body").addClass("animated fadeIn");
+});
+ setTimeout(function() {
+	$("#hey1").removeClass("inv");
+    $("#hey1").addClass("animated fadeInRight");    
+    }, 1000);
+	setTimeout(function() {
+    $("#hey2").removeClass("inv");
+	$("#hey2").addClass("animated fadeInRight");    
+    }, 1500);
+	setTimeout(function() {
+	$("#hey3").removeClass("inv");
+    $("#hey3").addClass("animated fadeIn");    
+    }, 3500);
+	$(window).scroll(function() {
+	 if($(document).scrollTop() < 1000){
+  $('#two').removeClass('invert');
+  $('#two').addClass('normal');
+   
+  }
+  else if ($(document).scrollTop() > 1000 && $(document).scrollTop()<2000) {
+	$('#two').removeClass('normal');
+    $('#two').addClass('invert'); 
+  }
+if ($(document).scrollTop() > 2000) {	
+  $('#two').addClass('normal');
+    $('#two').removeClass('invert'); 
+  } 
+if ($(document).scrollTop() > 2350) {
+setTimeout(function() {	
+  $('#foot').addClass('animated fadeIn');
+    $('#foot').removeClass('inv'); 
+  },350);
+}  
+  
+});
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 500) {
+	$('#first').removeClass('inv');
+    $('#first').addClass('animated fadeIn'); 
+  }
+});
+
+$(function() {
+			$('a[href*="#"]:not([href="#"])').click(function() {
+			  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				if (target.length) {
+				  $('html, body').animate({
+					scrollTop: target.offset().top
+				  }, 1000);
+				  return false;
+				}
+			  }
+			});
+		  });
+</script>
+<style>
+.ghost-button-transition,.ghost-button-transition:visited {
+			  color:#fff;
+			  font-family: Century Gothic;
+			  display: inline-block;
+			  width: 150px;
+			  padding: 8px;
+			  border: 2px solid #ffffff;
+			  text-align: center;
+			  
+			  outline: none;
+			  text-decoration: none !important;
+			  transition: background-color 0.2s ease-out,
+						  color 0.2s ease-out;
+			}
+			.ghost-button-transition:hover,
+			.ghost-button-transition:active{
+			cursor: pointer;text-decoration: none;
+			  background-color: #fff;
+			  color: #000;
+			  text-decoration:none !important;
+			  transition: background-color 0.3s ease-in,
+						  color 0.3s ease-in;
+			}
+.main{
+background: url("comp.jpg");
+height: 100%; 
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+text-align:center;
+}
+.invert
+{
+transition: background-color 0.3s ease;
+background-color:#212121;
+}
+.normal
+{
+transition: background-color 0.3s ease;
+background-color:#E0E0E0;
+}
+.inv{
+visibility:hidden;
+}
+.container-fluid{
+padding:80px 32px 32px 0px;
+}
+.fa{
+font-size:72px;
+}
+.ico{
+border: 2px solid;
+border-radius: 50%
+}
+#me{
+border: 7px solid;
+border-radius: 50%;
+}
+.fa-star{
+font-size:30px;
+}
+.footer{
+bottom:0;
+width:100%;
+background-color:#263238;
+font-family: 'Josefin Sans', sans-serif;
+color:#E0E0E0;
+font-family: 'Homemade Apple', cursive;font-size:50px;color:white;
+text-align:center;
+}
+</style>
+
+<title>Portfolio</title>
+</head>
+
+<body>
+
+
+<div class="main"style="overflow-x:hidden;"> 
+<!--<div class="container-fluid">
+<div class="row"></div>
+</div>-->
+</br></br></br></br></br></br></br>
+<div id="hey1" class="inv"style="font-family: 'Josefin Sans', sans-serif;font-size:50px;color:white;">My name is</div>
+<div id="hey2" class="inv"style="font-family: 'Homemade Apple', cursive;font-size:50px;color:white;">Amit Gaikwad</div></br>
+<div id="hey3" class="inv"><a class="ghost-button-transition"style="letter-spacing:2px"href="#two">WELCOME</a></div>
+</div>
+<div style="min-height:100%;" class="normal" id="two">
+<div class="container-fluid">
+	<div id="first" class="row inv">
+		<div class="col-md-1 offset-md-1" >
+		<img id="me" src="me.jpg" height="300px">
+		</div>
+		<div class="col-md-6 offset-md-3" style="font-size:28px;font-family: 'Josefin Sans', sans-serif;">
+		</br></br>Inspired by the captivating power of minimalism and creativity, I seek to achieve design that is clean and intuitive.
+		</div>
+	</div>
+	</br></br></br></br></br></br></br></br></br>
+	<div class="row" style="color:#E0E0E0">
+		<div class="col-md-1 offset-md-11" >
+		<i class="fa fa-lightbulb-o"></i>
+		</div>
+		</div></br></br>
+		<div class="row"style="color:#E0E0E0;font-family: 'Josefin Sans', sans-serif;">
+		<div class="col-md-3 offset-md-1">
+		</br></br><div style="font-size:28px;">SOOAD Project</div>
+		<div style="font-size:20px">
+		Training and
+Placement Management System
+		</div>
+		</div>
+		<div class="col-md-3 offset-md-1">
+		</br></br><div style="font-size:28px;">Web Technologies Project</div>
+		<div style="font-size:20px">
+The
+Butler, a website providing
+personalized services to user		</div>
+		</div>
+		<div class="col-md-3 offset-md-1">
+		</br></br><div style="font-size:28px;">DDB Project</div>
+		<div style="font-size:20px">
+Medicotron, a medical
+supply inventory website for a
+chain of pharmacies		</div>
+		</div>
+		</div>
+		</br></br></br></br></br></br></br></br>
+	<div class="row" style="color:#E0E0E0">
+		<div class="col-md-1 offset-md-1" >
+		<i class="fa fa-graduation-cap"></i>
+		</div>
+		</div></br></br>
+		<div class="row" style="color:#E0E0E0;font-family: 'Josefin Sans', sans-serif;">
+		<div class="col-md-3 offset-md-1">
+		</br></br><div style="font-size:28px;">Hutchings High School</div>
+		<div style="font-size:20px">
+		Indian Certificate of Secondary Education
+		</div>
+		<div style="padding-top:5px;font-size:18px">
+		Percentage: 91.2%
+		</div>
+		</div>
+		<div class="col-md-3 offset-md-1">
+		</br></br><div style="font-size:28px;">St. Vincent's Junior College</div>
+		<div style="font-size:20px">
+		Higher Secondary Education
+		</div>
+		<div style="padding-top:5px;font-size:18px">
+		Precentage: 77%
+		</div>
+		</div>
+		<div class="col-md-3 offset-md-1">
+		</br></br><div style="font-size:28px;">Sardar Patel Institute of Technology</div>
+		<div style="font-size:20px">
+		B.E. Computer Engineering
+		</div>
+		<div style="padding-top:5px;font-size:18px">
+		Average CGPA: 8.4
+		</div>
+		</div>
+		</div>
+		</br></br></br></br></br></br></br></br></br>
+		<div class="row" style="color:#212121">
+		<div class="col-md-1 offset-md-1" >
+		<i class="fa fa-cogs"></i>
+		</div>
+		<div class="col-md-1 offset-md-4" >
+		<i class="fa fa-users"></i>
+		</div>
+		</div></br></br>
+		<div class="row" style="color:#212121;font-family: 'Josefin Sans', sans-serif;">
+			<div class="col-md-5 offset-md-1" style="font-size:28px;">
+				HTML&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>
+				</br>CSS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>
+				</br>Bootstrap&nbsp&nbsp&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>
+				</br>JQuery&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>
+				</br>Python&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>
+			</div>
+			<div class="col-md-5" style="font-size:28px;">
+				Creativity&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>
+				</br>Teamwork&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>
+				</br>Communication&nbsp&nbsp&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>
+				</br>Flexibility&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>
+				</br>Organization&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>&nbsp<i class="fa fa-star"></i>
+			</div>
+		</div>
+		</br></br></br></br></br></br></br></br></br></br>
+	</div>
+	<div class="footer"></br>
+	<div id="foot"class="inv">
+	Thank you !
+	</div>
+	</br>
+	</div>
+
+</div>
+</body>
+</html>
